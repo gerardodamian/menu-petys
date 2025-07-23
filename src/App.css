@@ -1,3 +1,13 @@
+/* FORZAR ESPACIADO ENTRE CARDS - MÁXIMA PRIORIDAD */
+.menu-items {
+  gap: 0.8rem !important;
+  padding: 1rem !important;
+}
+
+.menu-item {
+  margin: 0 !important;
+}
+
 /* Reset y variables CSS */
 :root {
   /* Nueva paleta de colores - Bronce vivo */

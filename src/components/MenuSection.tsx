@@ -27,9 +27,19 @@ function MenuSection() {
         ))}
       </div>
 
-      <div className="menu-items">
+      <div 
+        className="menu-items"
+        style={{
+          gap: '0.8rem',
+          padding: '1rem',
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))'
+        }}
+      >
         {filteredItems.map(item => (
-          <MenuItem key={item.id} item={item} />
+          <div key={item.id}>
+            <MenuItem item={item} />
+          </div>
         ))}
       </div>
     </div>
