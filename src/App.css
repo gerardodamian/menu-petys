@@ -87,7 +87,7 @@ body {
 .app-header {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px) saturate(180%);
-  padding: 1.5rem 2rem;
+  padding: 1rem 1.5rem;
   box-shadow: var(--shadow-lg);
   text-align: center;
   border-bottom: 1px solid var(--border-color);
@@ -470,7 +470,7 @@ body {
 }
 
 .app-header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -492,7 +492,7 @@ body {
 
 .waiter-info-container {
   background: white;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   max-width: 500px;
@@ -562,7 +562,7 @@ body {
 /* Contenido principal */
 .main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .content-grid {
@@ -3121,6 +3121,308 @@ body::-webkit-scrollbar-thumb:hover {
     grid-template-columns: 1fr 1fr !important;
     gap: 4rem !important;
     padding: 2.5rem !important;
+  }
+}
+
+/* ========================================= */
+/* NUEVAS MEDIA QUERIES COMPACTAS RESPONSIVE */
+/* ========================================= */
+
+/* Móviles pequeños (320px - 480px) */
+@media (max-width: 480px) {
+  .app-header {
+    padding: 0.8rem 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.3rem;
+  }
+  
+  .app-header p {
+    font-size: 0.85rem;
+  }
+  
+  .waiter-info-container {
+    padding: 1.2rem !important;
+    margin: 0.8rem !important;
+  }
+  
+  .input-group input {
+    padding: 0.8rem !important;
+    font-size: 0.9rem;
+  }
+  
+  .submit-btn {
+    padding: 0.9rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .main-content {
+    padding: 0.8rem !important;
+  }
+  
+  .content-grid {
+    gap: 0.8rem !important;
+  }
+  
+  .menu-section, .order-section {
+    padding: 1rem !important;
+  }
+  
+  .category-tabs {
+    gap: 0.4rem;
+  }
+  
+  .category-tab {
+    padding: 0.6rem 1rem !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .menu-items {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+  
+  .menu-item {
+    padding: 1rem !important;
+  }
+  
+  .menu-item-image {
+    height: 120px !important;
+  }
+  
+  .menu-item h3 {
+    font-size: 1rem !important;
+    margin-bottom: 0.3rem;
+  }
+  
+  .menu-item-description {
+    font-size: 0.8rem !important;
+    line-height: 1.3;
+  }
+  
+  .menu-item-price {
+    font-size: 1.1rem !important;
+    margin: 0.6rem 0;
+  }
+  
+  .add-btn {
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .order-summary h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .order-item {
+    padding: 0.8rem !important;
+  }
+  
+  .order-item h4 {
+    font-size: 0.9rem !important;
+  }
+  
+  .order-total {
+    font-size: 1.1rem !important;
+    padding: 1rem !important;
+  }
+  
+  .send-order-btn {
+    padding: 0.9rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* Móviles medianos (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .app-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .app-header h1 {
+    font-size: 1.8rem !important;
+    margin-bottom: 0.4rem;
+  }
+  
+  .waiter-info-container {
+    padding: 1.5rem !important;
+    margin: 1rem !important;
+  }
+  
+  .input-group input {
+    padding: 1rem !important;
+    font-size: 1rem;
+  }
+  
+  .submit-btn {
+    padding: 1rem !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .main-content {
+    padding: 1rem !important;
+  }
+  
+  .menu-section, .order-section {
+    padding: 1.5rem !important;
+  }
+  
+  .category-tab {
+    padding: 0.8rem 1.2rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  .menu-items {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem !important;
+    padding: 1.5rem !important;
+  }
+  
+  .menu-item {
+    padding: 1.2rem !important;
+  }
+  
+  .menu-item-image {
+    height: 140px !important;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  .menu-item-description {
+    font-size: 0.85rem !important;
+  }
+  
+  .menu-item-price {
+    font-size: 1.2rem !important;
+  }
+  
+  .add-btn {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+/* Tablets pequeños (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app-header {
+    padding: 1.2rem 2rem;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem !important;
+  }
+  
+  .waiter-info-container {
+    padding: 2rem !important;
+    margin: 1.5rem !important;
+  }
+  
+  .main-content {
+    padding: 1.5rem !important;
+  }
+  
+  .menu-section, .order-section {
+    padding: 2rem !important;
+  }
+  
+  .category-tab {
+    padding: 1rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .menu-items {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+    padding: 2rem !important;
+  }
+  
+  .menu-item {
+    padding: 1.5rem !important;
+  }
+  
+  .menu-item-image {
+    height: 160px !important;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.2rem !important;
+  }
+  
+  .menu-item-description {
+    font-size: 0.9rem !important;
+  }
+  
+  .menu-item-price {
+    font-size: 1.3rem !important;
+  }
+  
+  .add-btn {
+    padding: 1rem 1.8rem !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .order-summary {
+    max-height: 60vh !important;
+  }
+}
+
+/* Tablets grandes y pantallas medianas (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .menu-items {
+    grid-template-columns: 1fr 1fr 1fr !important;
+    gap: 2rem !important;
+    padding: 2rem !important;
+  }
+  
+  .menu-item {
+    padding: 1.5rem !important;
+  }
+  
+  .menu-item-image {
+    height: 180px !important;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  .menu-item-description {
+    font-size: 0.95rem !important;
+  }
+  
+  .add-btn {
+    padding: 1rem 2rem !important;
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Optimizaciones específicas para touch devices */
+@media (pointer: coarse) {
+  .quantity-btn, .remove-btn {
+    min-width: 40px !important;
+    min-height: 40px !important;
+    padding: 0.6rem !important;
+    font-size: 1rem !important;
+  }
+  
+  .add-btn {
+    min-height: 44px !important;
+    touch-action: manipulation;
+  }
+  
+  .category-tab {
+    min-height: 44px !important;
+    touch-action: manipulation;
+  }
+  
+  .send-order-btn {
+    min-height: 48px !important;
+    touch-action: manipulation;
   }
 }
 
