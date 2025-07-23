@@ -620,10 +620,10 @@ body {
 }
 
 .menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
-  padding: 2rem;
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 4rem !important;
+  padding: 2.5rem !important;
   align-items: start;
   max-width: 100%;
   overflow-y: auto;
@@ -634,7 +634,8 @@ body {
 .menu-item {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
-  padding: 1.25rem;
+  padding: 1.8rem !important;
+  margin: 1rem !important;
   transition: var(--transition);
   background: var(--gradient-card);
   position: relative;
@@ -656,6 +657,25 @@ body {
   background: var(--gradient-primary);
   transform: scaleX(0);
   transition: transform 0.3s ease;
+}
+
+/* Forzar espacio adicional entre cards */
+.menu-item {
+  box-sizing: border-box !important;
+}
+
+.menu-item:not(:last-child) {
+  margin-bottom: 2rem !important;
+}
+
+/* Regla de espaciado ultra específica */
+.menu-section .menu-items .menu-item {
+  margin: 2rem 1.5rem !important;
+}
+
+.main-content .menu-section .menu-items {
+  gap: 4rem !important;
+  padding: 3rem !important;
 }
 
 .menu-item:hover::before {
@@ -3133,6 +3153,23 @@ body::-webkit-scrollbar-thumb:hover {
 /* NUEVAS MEDIA QUERIES COMPACTAS RESPONSIVE */
 /* ========================================= */
 
+/* Pantallas extra pequeñas (hasta 360px) */
+@media (max-width: 360px) {
+  .menu-items {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 1rem !important;
+  }
+  
+  .menu-item {
+    padding: 1.2rem !important;
+  }
+  
+  .content-grid {
+    gap: 1rem !important;
+  }
+}
+
 /* Móviles pequeños (320px - 480px) */
 @media (max-width: 480px) {
   .app-header {
@@ -3232,12 +3269,12 @@ body::-webkit-scrollbar-thumb:hover {
   
   .menu-items {
     grid-template-columns: 1fr !important;
-    gap: 1.8rem !important;
-    padding: 1rem !important;
+    gap: 2.5rem !important;
+    padding: 1.5rem 1rem !important;
   }
   
   .menu-item {
-    padding: 1rem !important;
+    padding: 1.2rem !important;
   }
   
   .menu-item-image {
@@ -3333,7 +3370,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   
   .menu-item {
-    padding: 1.2rem !important;
+    padding: 1.3rem !important;
   }
   
   .menu-item-image {
@@ -3488,12 +3525,12 @@ body::-webkit-scrollbar-thumb:hover {
 @media (min-width: 1025px) and (max-width: 1440px) {
   .menu-items {
     grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 2.5rem !important;
-    padding: 2rem !important;
+    gap: 3rem !important;
+    padding: 2.5rem !important;
   }
   
   .menu-item {
-    padding: 1.5rem !important;
+    padding: 1.8rem !important;
   }
   
   .menu-item-image {
@@ -3511,6 +3548,24 @@ body::-webkit-scrollbar-thumb:hover {
   .add-btn {
     padding: 1rem 2rem !important;
     font-size: 1.1rem !important;
+  }
+}
+
+/* Tablets en modo portrait específico */
+@media (min-width: 600px) and (max-width: 900px) and (orientation: portrait) {
+  .menu-items {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2.2rem !important;
+    padding: 1.8rem !important;
+  }
+  
+  .menu-item {
+    padding: 1.4rem !important;
+    margin: 0 !important;
+  }
+  
+  .content-grid {
+    gap: 1.5rem !important;
   }
 }
 
