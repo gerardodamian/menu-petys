@@ -1091,13 +1091,13 @@ body {
 .order-header {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .order-header h2 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .order-info p {
@@ -1107,7 +1107,7 @@ body {
 
 .order-items {
   flex: 1;
-  padding: 1rem;
+  padding: 0.8rem;
   overflow-y: auto;
   min-height: 0;
 }
@@ -1116,35 +1116,36 @@ body {
   text-align: center;
   color: #7f8c8d;
   font-style: italic;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .order-item {
   background: #f8f9fa;
-  border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
   display: grid;
   grid-template-columns: 1fr auto auto;
-  gap: 1rem;
+  gap: 0.8rem;
   align-items: center;
 }
 
 .item-details h4 {
   color: #2c3e50;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
 }
 
 .item-notes {
   color: #7f8c8d;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
-  margin: 0.2rem 0;
+  margin: 0.1rem 0;
 }
 
 .item-price {
   color: #95a5a6;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .item-controls {
@@ -1158,21 +1159,22 @@ body {
 }
 
 .item-controls .quantity-btn {
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
+  font-size: 0.9rem;
 }
 
 .item-controls .quantity {
-  font-size: 1rem;
-  min-width: 25px;
+  font-size: 0.9rem;
+  min-width: 22px;
 }
 
 .remove-btn {
   background: #e74c3c;
   color: white;
   border: none;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -1189,12 +1191,12 @@ body {
 .item-total {
   font-weight: 700;
   color: #27ae60;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .order-footer {
   background: #f8f9fa;
-  padding: 1rem;
+  padding: 0.8rem;
   border-top: 1px solid #e9ecef;
   flex-shrink: 0;
   margin-top: auto;
@@ -1202,25 +1204,25 @@ body {
 
 .total {
   text-align: center;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .total h3 {
   color: #2c3e50;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
 .order-actions {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.5rem;
 }
 
 .send-btn {
   background: linear-gradient(45deg, #27ae60, #2ecc71);
   color: white;
   border: none;
-  padding: 0.7rem 1rem;
+  padding: 0.6rem 0.8rem;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -1228,9 +1230,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 0.3rem;
   transition: all 0.2s ease;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .send-btn:hover:not(:disabled) {
@@ -3166,6 +3168,52 @@ body::-webkit-scrollbar-thumb:hover {
     gap: 0.8rem !important;
   }
   
+  .order-section {
+    padding: 0.8rem !important;
+  }
+  
+  .order-header {
+    padding: 0.8rem !important;
+  }
+  
+  .order-header h2 {
+    font-size: 1rem !important;
+    margin-bottom: 0.3rem;
+  }
+  
+  .order-items {
+    padding: 0.6rem !important;
+  }
+  
+  .order-item {
+    padding: 0.6rem !important;
+    margin-bottom: 0.6rem !important;
+    gap: 0.6rem !important;
+  }
+  
+  .item-details h4 {
+    font-size: 0.85rem !important;
+  }
+  
+  .item-controls .quantity-btn, .remove-btn {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.85rem !important;
+  }
+  
+  .order-footer {
+    padding: 0.6rem !important;
+  }
+  
+  .total h3 {
+    font-size: 1rem !important;
+  }
+  
+  .send-btn {
+    padding: 0.6rem !important;
+    font-size: 0.8rem !important;
+  }
+  
   .menu-section, .order-section {
     padding: 1rem !important;
   }
@@ -3305,6 +3353,37 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0.8rem 1.5rem !important;
     font-size: 1rem !important;
   }
+  
+  .order-header {
+    padding: 0.9rem !important;
+  }
+  
+  .order-header h2 {
+    font-size: 1.1rem !important;
+  }
+  
+  .order-items {
+    padding: 0.7rem !important;
+  }
+  
+  .order-item {
+    padding: 0.7rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+  
+  .item-controls .quantity-btn, .remove-btn {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  
+  .order-footer {
+    padding: 0.7rem !important;
+  }
+  
+  .send-btn {
+    padding: 0.7rem !important;
+    font-size: 0.9rem !important;
+  }
 }
 
 /* Tablets pequeños (769px - 1024px) */
@@ -3367,7 +3446,38 @@ body::-webkit-scrollbar-thumb:hover {
   }
   
   .order-summary {
-    max-height: 60vh !important;
+    max-height: 65vh !important;
+  }
+  
+  .order-header {
+    padding: 1rem !important;
+  }
+  
+  .order-header h2 {
+    font-size: 1.2rem !important;
+  }
+  
+  .order-items {
+    padding: 0.8rem !important;
+  }
+  
+  .order-item {
+    padding: 0.8rem !important;
+    margin-bottom: 0.8rem !important;
+  }
+  
+  .item-controls .quantity-btn, .remove-btn {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .order-footer {
+    padding: 0.8rem !important;
+  }
+  
+  .send-btn {
+    padding: 0.8rem !important;
+    font-size: 1rem !important;
   }
 }
 
