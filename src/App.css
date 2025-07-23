@@ -622,7 +622,7 @@ body {
 .menu-items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
   padding: 2rem;
   align-items: start;
   max-width: 100%;
@@ -1198,7 +1198,7 @@ body {
 
 .order-footer {
   background: #f8f9fa;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-top: 1px solid #e9ecef;
   flex-shrink: 0;
   margin-top: auto;
@@ -1206,13 +1206,14 @@ body {
 
 .total {
   text-align: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
 }
 
 .total h3 {
   color: #2c3e50;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   margin: 0;
+  line-height: 1.2;
 }
 
 .order-actions {
@@ -3122,9 +3123,9 @@ body::-webkit-scrollbar-thumb:hover {
   
   /* Grid de 2 columnas para tablets */
   .menu-items {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 4rem !important;
-    padding: 2.5rem !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    padding: 1rem !important;
   }
 }
 
@@ -3231,7 +3232,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   .menu-items {
     grid-template-columns: 1fr !important;
-    gap: 1rem !important;
+    gap: 1.8rem !important;
     padding: 1rem !important;
   }
   
@@ -3327,7 +3328,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   .menu-items {
     grid-template-columns: 1fr 1fr !important;
-    gap: 1.5rem !important;
+    gap: 2rem !important;
     padding: 1.5rem !important;
   }
   
@@ -3418,7 +3419,7 @@ body::-webkit-scrollbar-thumb:hover {
   
   .menu-items {
     grid-template-columns: 1fr 1fr !important;
-    gap: 2rem !important;
+    gap: 2.5rem !important;
     padding: 2rem !important;
   }
   
@@ -3487,7 +3488,7 @@ body::-webkit-scrollbar-thumb:hover {
 @media (min-width: 1025px) and (max-width: 1440px) {
   .menu-items {
     grid-template-columns: 1fr 1fr 1fr !important;
-    gap: 2rem !important;
+    gap: 2.5rem !important;
     padding: 2rem !important;
   }
   
@@ -3583,5 +3584,20 @@ body::-webkit-scrollbar-thumb:hover {
 .menu-item-price {
   font-size: 1.1rem !important;
   margin: 0.4rem 0 !important;
+}
+
+/* Total súper compacto */
+.total h3 {
+  font-size: 0.85rem !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+}
+
+.total {
+  margin-bottom: 0.2rem !important;
+}
+
+.order-footer {
+  padding: 0.3rem !important;
 }
 
