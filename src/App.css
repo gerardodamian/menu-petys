@@ -1,37 +1,37 @@
 /* Reset y variables CSS */
 :root {
-  /* Nueva paleta de colores - Naranjas y grises */
-  --primary-color: #ff6b35;
-  --primary-hover: #e55a2b;
-  --primary-light: #ff8a65;
-  --secondary-color: #f7931e;
-  --secondary-hover: #e8841a;
-  --secondary-light: #ffb74d;
-  --accent-color: #ff6b35;
+  /* Nueva paleta de colores - Bronce vivo */
+  --primary-color: #cd7f32;
+  --primary-hover: #b8691e;
+  --primary-light: #daa520;
+  --secondary-color: #b87333;
+  --secondary-hover: #a0522d;
+  --secondary-light: #d2b48c;
+  --accent-color: #cd7f32;
   --danger-color: #ef4444;
   --danger-hover: #dc2626;
-  --warning-color: #f7931e;
-  --warning-hover: #e8841a;
+  --warning-color: #daa520;
+  --warning-hover: #b8860b;
   --success-color: #22c55e;
   --success-hover: #16a34a;
   
-  /* Texto y fondos con los grises especificados */
-  --text-primary: #2c3e50;
-  --text-secondary: #34495e;
-  --text-light: #7f8c8d;
+  /* Texto y fondos con tonos tierra */
+  --text-primary: #5d4037;
+  --text-secondary: #6d4c41;
+  --text-light: #8d6e63;
   --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
-  --border-color: #e2e8f0;
-  --border-light: #f1f5f9;
+  --bg-secondary: #faf8f5;
+  --bg-tertiary: #f5f3f0;
+  --border-color: #d7ccc8;
+  --border-light: #efebe9;
   
-  /* Sombras mejoradas */
-  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  /* Sombras con tinte bronce */
+  --shadow-xs: 0 1px 2px 0 rgba(205, 127, 50, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(205, 127, 50, 0.1), 0 1px 2px -1px rgba(205, 127, 50, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(205, 127, 50, 0.1), 0 2px 4px -2px rgba(205, 127, 50, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(205, 127, 50, 0.1), 0 4px 6px -4px rgba(205, 127, 50, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(205, 127, 50, 0.1), 0 8px 10px -6px rgba(205, 127, 50, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(205, 127, 50, 0.25);
   
   /* Efectos visuales */
   --border-radius: 12px;
@@ -40,12 +40,12 @@
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   
-  /* Gradientes con nueva paleta */
-  --gradient-primary: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
-  --gradient-secondary: linear-gradient(135deg, #f7931e 0%, #ff6b35 100%);
+  /* Gradientes con paleta bronce */
+  --gradient-primary: linear-gradient(135deg, #cd7f32 0%, #b87333 100%);
+  --gradient-secondary: linear-gradient(135deg, #b87333 0%, #daa520 100%);
   --gradient-success: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
-  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-  --gradient-dark: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #faf8f5 100%);
+  --gradient-dark: linear-gradient(135deg, #5d4037 0%, #6d4c41 100%);
 }
 
 * {
@@ -449,7 +449,7 @@ body {
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ff6b35, #f7931e 100%);
+  background: var(--gradient-primary);
   min-height: 100vh;
 }
 
@@ -471,7 +471,7 @@ body {
 
 .app-header h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
@@ -542,7 +542,7 @@ body {
 }
 
 .submit-btn {
-  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  background: var(--gradient-primary);
   color: white;
   border: none;
   padding: 1.2rem;
@@ -613,7 +613,7 @@ body {
 }
 
 .category-tab.active {
-  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  background: var(--gradient-primary);
   color: white;
   border-color: transparent;
 }
@@ -2776,7 +2776,7 @@ body {
 }
 
 .save-btn {
-  background: #f7931e;
+  background: var(--secondary-color);
   color: white;
 }
 
