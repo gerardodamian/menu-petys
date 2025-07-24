@@ -1,157 +1,166 @@
 import type { MenuItem } from './types';
 
 export const MENU_ITEMS: MenuItem[] = [
-  {
-    id: "1",
-    name: "Pizza Margherita",
-    description: "Base de tomate, mozzarella fresca, albahaca y aceite de oliva",
-    price: 12500,
-    image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop",
-    category: "pizzas",
-    available: true
-  },
-  {
-    id: "2",
-    name: "Hamburguesa Clásica",
-    description: "Carne 180g, lechuga, tomate, cebolla, queso cheddar y papas fritas",
-    price: 9500,
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
-    category: "sandwiches",
-    available: true
-  },
-  {
-    id: "3",
-    name: "Pasta Carbonara",
-    description: "Fetuccini con salsa carbonara, panceta, huevo y queso parmesano",
-    price: 11000,
-    image: "https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?w=400&h=300&fit=crop",
-    category: "pastas",
-    available: true
-  },
-  {
-    id: "4",
-    name: "Ensalada César",
-    description: "Lechuga romana, pollo grillado, crutones, parmesano y aderezo césar",
-    price: 8500,
-    image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop",
-    category: "ensaladas",
-    available: true
-  },
-  {
-    id: "5",
-    name: "Salmón Grillado",
-    description: "Filete de salmón con vegetales asados y salsa de hierbas",
-    price: 15500,
-    image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop",
-    category: "main_courses",
-    available: true
-  },
-  {
-    id: "6",
-    name: "Tiramisú",
-    description: "Clásico postre italiano con café, mascarpone y cacao",
-    price: 4500,
-    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop",
-    category: "desserts",
-    available: true
-  },
-  {
-    id: "7",
-    name: "Pizza Pepperoni",
-    description: "Base de tomate, mozzarella y abundante pepperoni",
-    price: 13500,
-    image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop",
-    category: "pizzas",
-    available: true
-  },
-  {
-    id: "8",
-    name: "Risotto de Hongos",
-    description: "Arroz arborio con hongos portobello, trufa y parmesano",
-    price: 12000,
-    image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&h=300&fit=crop",
-    category: "main_courses",
-    available: true
-  },
-  {
-    id: "9",
-    name: "Coca Cola",
-    description: "Bebida gaseosa clásica 350ml",
-    price: 2500,
-    image: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=300&fit=crop",
-    category: "drinks",
-    available: true
-  },
-  {
-    id: "10",
-    name: "Jugo Natural de Naranja",
-    description: "Jugo fresco de naranja recién exprimido 300ml",
-    price: 3500,
-    image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop",
-    category: "drinks",
-    available: true
-  },
-  {
-    id: "11",
-    name: "Agua Mineral",
-    description: "Agua mineral sin gas 500ml",
-    price: 1800,
-    image: "https://jumboargentina.vtexassets.com/arquivos/ids/795828-800-600?v=638313501973800000&width=800&height=600&aspect=true",
-    category: "drinks",
-    available: true
-  },
-  {
-    id: "12",
-    name: "Café Americano",
-    description: "Café americano caliente recién preparado",
-    price: 2800,
-    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop",
-    category: "drinks",
-    available: true
-  },
-  {
-    id: "13",
-    name: "Desayuno Completo",
-    description: "Huevos revueltos, tocino, pan tostado, palta y jugo de naranja",
-    price: 7500,
-    image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop",
-    category: "breakfast",
-    available: true
-  },
-  {
-    id: "14",
-    name: "Pancakes con Miel",
-    description: "Stack de 3 pancakes esponjosos con miel, mantequilla y frutos rojos",
-    price: 6500,
-    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop",
-    category: "breakfast",
-    available: true
-  },
-  {
-    id: "15",
-    name: "Tostadas Francesas",
-    description: "Pan brioche bañado en huevo, canela y azúcar flor con jarabe de maple",
-    price: 6000,
-    image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop",
-    category: "breakfast",
-    available: true
-  },
-  {
-    id: "16",
-    name: "Avocado Toast",
-    description: "Pan integral tostado con palta, tomate cherry, huevo poché y sésamo",
-    price: 5500,
-    image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop",
-    category: "breakfast",
-    available: true
-  },
-  {
-    id: "17",
-    name: "Yogurt con Granola",
-    description: "Yogurt griego natural con granola casera, miel y frutas de temporada",
-    price: 4500,
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
-    category: "breakfast",
-    available: true
-  }
+    {
+        id: "1",
+        name: "Pizza Margherita",
+        description:
+            "Base de tomate, mozzarella fresca, albahaca y aceite de oliva",
+        price: 12500,
+        image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop",
+        category: "pizzas",
+        available: true,
+    },
+    {
+        id: "2",
+        name: "Hamburguesa Clásica",
+        description:
+            "Carne 180g, lechuga, tomate, cebolla, queso cheddar y papas fritas",
+        price: 9500,
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop",
+        category: "sandwiches",
+        available: true,
+    },
+    {
+        id: "3",
+        name: "Pasta Carbonara",
+        description:
+            "Fetuccini con salsa carbonara, panceta, huevo y queso parmesano",
+        price: 11000,
+        image: "https://www.paulinacocina.net/wp-content/uploads/2023/03/espaguetis-a-la-carbonara-receta-italiana-800x450.jpg",
+        category: "pastas",
+        available: true,
+    },
+    {
+        id: "4",
+        name: "Ensalada César",
+        description:
+            "Lechuga romana, pollo grillado, crutones, parmesano y aderezo césar",
+        price: 8500,
+        image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400&h=300&fit=crop",
+        category: "ensaladas",
+        available: true,
+    },
+    {
+        id: "5",
+        name: "Salmón Grillado",
+        description: "Filete de salmón con vegetales asados y salsa de hierbas",
+        price: 15500,
+        image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop",
+        category: "main_courses",
+        available: true,
+    },
+    {
+        id: "6",
+        name: "Tiramisú",
+        description: "Clásico postre italiano con café, mascarpone y cacao",
+        price: 4500,
+        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop",
+        category: "desserts",
+        available: true,
+    },
+    {
+        id: "7",
+        name: "Pizza Pepperoni",
+        description: "Base de tomate, mozzarella y abundante pepperoni",
+        price: 13500,
+        image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop",
+        category: "pizzas",
+        available: true,
+    },
+    {
+        id: "8",
+        name: "Risotto de Hongos",
+        description: "Arroz arborio con hongos portobello, trufa y parmesano",
+        price: 12000,
+        image: "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=400&h=300&fit=crop",
+        category: "main_courses",
+        available: true,
+    },
+    {
+        id: "9",
+        name: "Coca Cola",
+        description: "Bebida gaseosa clásica 350ml",
+        price: 2500,
+        image: "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=300&fit=crop",
+        category: "drinks",
+        available: true,
+    },
+    {
+        id: "10",
+        name: "Jugo Natural de Naranja",
+        description: "Jugo fresco de naranja recién exprimido 300ml",
+        price: 3500,
+        image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=300&fit=crop",
+        category: "drinks",
+        available: true,
+    },
+    {
+        id: "11",
+        name: "Agua Mineral",
+        description: "Agua mineral sin gas 500ml",
+        price: 1800,
+        image: "https://jumboargentina.vtexassets.com/arquivos/ids/795828-800-600?v=638313501973800000&width=800&height=600&aspect=true",
+        category: "drinks",
+        available: true,
+    },
+    {
+        id: "12",
+        name: "Café Americano",
+        description: "Café americano caliente recién preparado",
+        price: 2800,
+        image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop",
+        category: "drinks",
+        available: true,
+    },
+    {
+        id: "13",
+        name: "Desayuno Completo",
+        description:
+            "Huevos revueltos, tocino, pan tostado, palta y jugo de naranja",
+        price: 7500,
+        image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&h=300&fit=crop",
+        category: "breakfast",
+        available: true,
+    },
+    {
+        id: "14",
+        name: "Pancakes con Miel",
+        description:
+            "Stack de 3 pancakes esponjosos con miel, mantequilla y frutos rojos",
+        price: 6500,
+        image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop",
+        category: "breakfast",
+        available: true,
+    },
+    {
+        id: "15",
+        name: "Tostadas Francesas",
+        description:
+            "Pan brioche bañado en huevo, canela y azúcar flor con jarabe de maple",
+        price: 6000,
+        image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=400&h=300&fit=crop",
+        category: "breakfast",
+        available: true,
+    },
+    {
+        id: "16",
+        name: "Avocado Toast",
+        description:
+            "Pan integral tostado con palta, tomate cherry, huevo poché y sésamo",
+        price: 5500,
+        image: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=400&h=300&fit=crop",
+        category: "breakfast",
+        available: true,
+    },
+    {
+        id: "17",
+        name: "Yogurt con Granola",
+        description:
+            "Yogurt griego natural con granola casera, miel y frutas de temporada",
+        price: 4500,
+        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
+        category: "breakfast",
+        available: true,
+    },
 ];
